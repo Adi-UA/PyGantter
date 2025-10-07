@@ -1,0 +1,99 @@
+[
+    {
+        "Task": "Setup Access",
+        "Start": "04/22/2025",
+        "End": "04/23/2025",
+        "Dependencies": [],
+        "Group": "Core Project"
+    },
+    {
+        "Task": "Service Integration",
+        "Start": "04/23/2025",
+        "End": "04/30/2025",
+        "Dependencies": [
+            "Setup Access"
+        ],
+        "Group": "Core Project"
+    },
+    {
+        "Task": "Build Workflow",
+        "Start": "04/30/2025",
+        "End": "05/04/2025",
+        "Dependencies": [
+            "Service Integration"
+        ],
+        "Group": "Core Project"
+    },
+    {
+        "Task": "Setup Monitoring",
+        "Start": "05/02/2025",
+        "End": "05/04/2025",
+        "Dependencies": [
+            "Build Workflow"
+        ],
+        "Group": "Core Project"
+    },
+    {
+        "Task": "Run Jobs",
+        "Start": "05/04/2025",
+        "End": "05/09/2025",
+        "Dependencies": [
+            "Setup Monitoring"
+        ],
+        "Group": "Core Project"
+    },
+    {
+        "Task": "Testing",
+        "Start": "05/06/2025",
+        "End": "05/11/2025",
+        "Dependencies": [
+            "Run Jobs"
+        ],
+        "Group": "Core Project"
+    },
+    {
+        "Task": "Migration Setup",
+        "Start": "05/09/2025",
+        "End": "05/12/2025",
+        "Dependencies": [
+            "Testing"
+        ],
+        "Group": "Core Project"
+    },
+    {
+        "Task": "Final Review",
+        "Start": "05/12/2025",
+        "End": "05/15/2025",
+        "Dependencies": [
+            "Migration Setup"
+        ],
+        "Group": "Core Project"
+    },
+    {
+        "Task": "Out of Office",
+        "Start": "05/15/2025",
+        "End": "05/19/2025",
+        "Dependencies": [
+            "Final Review"
+        ],
+        "Group": "Out of Office"
+    },
+    {
+        "Task": "Oncall Week",
+        "Start": "05/19/2025",
+        "End": "05/27/2025",
+        "Dependencies": [
+            "Out of Office"
+        ],
+        "Group": "Oncall Rotation"
+    },
+    {
+        "Task": "Wrap Up",
+        "Start": "05/27/2025",
+        "End": "05/30/2025",
+        "Dependencies": [
+            "Oncall Week"
+        ],
+        "Group": "Core Project"
+    }
+]

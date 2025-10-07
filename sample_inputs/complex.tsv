@@ -1,0 +1,12 @@
+Task	Start	End	Dependencies	Group
+Setup Access	04/22/2025	04/23/2025		Core Project
+Service Integration	04/23/2025	04/30/2025	Setup Access	Core Project
+Build Workflow	04/30/2025	05/04/2025	Service Integration	Core Project
+Setup Monitoring	05/02/2025	05/04/2025	Build Workflow	Core Project
+Run Jobs	05/04/2025	05/09/2025	Setup Monitoring	Core Project
+Testing	05/06/2025	05/11/2025	Run Jobs	Core Project
+Migration Setup	05/09/2025	05/12/2025	Testing	Core Project
+Final Review	05/12/2025	05/15/2025	Migration Setup	Core Project
+Out of Office	05/15/2025	05/19/2025	Final Review	Out of Office
+Oncall Week	05/19/2025	05/27/2025	Out of Office	Oncall Rotation
+Wrap Up	05/27/2025	05/30/2025	Oncall Week	Core Project

@@ -1,0 +1,23 @@
+[
+  {
+    "Task": "Design",
+    "Start": "10/01/2025",
+    "End": "10/05/2025",
+    "Dependencies": [],
+    "Group": "Alice's Tasks"
+  },
+  {
+    "Task": "Develop",
+    "Start": "10/03/2025",
+    "End": "10/08/2025",
+    "Dependencies": ["Design"],
+    "Group": "Bob's Tasks"
+  },
+  {
+    "Task": "Test",
+    "Start": "10/06/2025",
+    "End": "10/10/2025",
+    "Dependencies": ["Develop"],
+    "Group": "Alice's Tasks"
+  }
+]
