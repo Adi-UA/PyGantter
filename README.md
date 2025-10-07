@@ -1,9 +1,12 @@
 # PyGantter
 
-![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/username/repo/ci.yml)
-![GitHub Release](https://img.shields.io/github/v/release/username/repo)
-![GitHub License](https://img.shields.io/github/license/username/repo)
-![GitHub Issues](https://img.shields.io/github/issues/username/repo)
+## Contributions
+
+Contributions are welcome! Feel free to fork the repository, submit issues, or create pull requests.
+
+![GitHub Release](https://img.shields.io/github/v/release/Adi-UA/PyGantter)
+![GitHub License](https://img.shields.io/github/license/Adi-UA/PyGantter?label=License)
+![GitHub Issues](https://img.shields.io/github/issues/Adi-UA/PyGantter)
 
 ![Ant Dracula Theme Example](sample_outputs/tasks_csv_ant_dracula.png)
 
