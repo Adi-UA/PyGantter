@@ -16,7 +16,7 @@ dependencies = [
     "plotly==5.15.0",
     "typer==0.9.0",
     "PyYAML==6.0.1",
-    "tqdm==4.65.0",
+    "tqdm==4.66.3",
     "colorama==0.4.6",
     "kaleido==0.2.1"
 ]
