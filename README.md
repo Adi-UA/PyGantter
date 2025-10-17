@@ -21,15 +21,20 @@ pip install .
 ## Usage
 
 ```bash
-python -m pygantter.cli --input tasks.csv --output gantt.png
+python -m pygantter.cli <input_file> --output <output_file>
+```
+
+Example:
+```bash
+python -m pygantter.cli tasks.csv --output gantt.png
 ```
 
 ### CLI Options
 
-- `--input`: Input file (CSV, TSV, or JSON)
+- `input` (positional): Input file (CSV, TSV, or JSON)
 - `--output`: Output image file (PNG or SVG)
 - `--title`: Chart title
-- `--theme`: Color theme (light, dark)
+- `--theme`: Color theme (light, dark, ant-dracula)
 - `--format`: Output format (png or svg)
 - `--preview`: Preview chart before saving
 - `--force`: Overwrite output file
@@ -95,7 +100,7 @@ Test10/06/202510/10/2025DevelopAlice's Tasks
 A more advanced Gantt chart example is available in `sample_inputs/complex.csv`.
 
 ```bash
-python -m pygantter.cli --input sample_inputs/complex.csv --output complex_example.png --title "Complex Timeline"
+python -m pygantter.cli sample_inputs/complex.csv --output complex_example.png --title "Complex Timeline"
 ```
 
 Preview of the first few rows:
@@ -131,7 +136,7 @@ PyGantter supports light, dark, and ant-dracula themes. See `pygantter/themes.py
 ## Example Command
 
 ```bash
-python -m pygantter.cli --input tasks.json --output gantt.svg --theme dark --preview
+python -m pygantter.cli tasks.json --output gantt.svg --theme dark --preview
 ```
 
 ## License
