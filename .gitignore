@@ -98,3 +98,6 @@ cython_debug/
 # VS Code
 .vscode/
 *.code-workspace
+
+# local virtualenvs (any suffix)
+.venv*/

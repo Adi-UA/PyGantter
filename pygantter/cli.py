@@ -1,8 +1,7 @@
 """Command-line interface for PyGantter."""
 
-from __future__ import annotations
-
 import os
+from typing import Optional
 
 import typer
 
@@ -33,7 +32,7 @@ def main(
     theme: str = typer.Option(
         "light", help=f"Color theme: {', '.join(available_themes())}."
     ),
-    format: str | None = typer.Option(
+    format: Optional[str] = typer.Option(
         None, help="Output format (png, svg, pdf, html). Defaults to file extension."
     ),
     no_critical_path: bool = typer.Option(
