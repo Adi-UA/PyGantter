@@ -1,4 +1,8 @@
-Task	Start	End	Dependencies	Group
-Design	10/01/2025	10/05/2025		Alice's Tasks
-Develop	10/03/2025	10/08/2025	Design	Bob's Tasks
-Test	10/06/2025	10/10/2025	Develop	Alice's Tasks
+Task	Start	End	Effort	Dependencies	Group	Progress	Resource
+Research	2025-10-01	2025-10-04			Planning	100	Priya
+Design	2025-10-04		5	Research	Planning	80	Priya
+Frontend	2025-10-09	2025-10-20		Design	Build	40	Alice
+Backend	2025-10-09	2025-10-18		Design	Build	55	Bob
+Integration	2025-10-20	2025-10-24		Frontend,Backend	Build	0	Alice
+QA	2025-10-24	2025-10-29		Integration	Launch	0	Bob
+Launch	2025-10-30	2025-10-30		QA	Launch	0	Team

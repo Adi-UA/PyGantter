@@ -1,23 +1,64 @@
 [
   {
+    "Task": "Research",
+    "Start": "2025-10-01",
+    "End": "2025-10-04",
+    "Group": "Planning",
+    "Progress": 100,
+    "Resource": "Priya"
+  },
+  {
     "Task": "Design",
-    "Start": "10/01/2025",
-    "End": "10/05/2025",
-    "Dependencies": [],
-    "Group": "Alice's Tasks"
+    "Start": "2025-10-04",
+    "Effort": 5,
+    "Dependencies": ["Research"],
+    "Group": "Planning",
+    "Progress": 80,
+    "Resource": "Priya"
   },
   {
-    "Task": "Develop",
-    "Start": "10/03/2025",
-    "End": "10/08/2025",
+    "Task": "Frontend",
+    "Start": "2025-10-09",
+    "End": "2025-10-20",
     "Dependencies": ["Design"],
-    "Group": "Bob's Tasks"
+    "Group": "Build",
+    "Progress": 40,
+    "Resource": "Alice"
   },
   {
-    "Task": "Test",
-    "Start": "10/06/2025",
-    "End": "10/10/2025",
-    "Dependencies": ["Develop"],
-    "Group": "Alice's Tasks"
+    "Task": "Backend",
+    "Start": "2025-10-09",
+    "End": "2025-10-18",
+    "Dependencies": ["Design"],
+    "Group": "Build",
+    "Progress": 55,
+    "Resource": "Bob"
+  },
+  {
+    "Task": "Integration",
+    "Start": "2025-10-20",
+    "End": "2025-10-24",
+    "Dependencies": ["Frontend", "Backend"],
+    "Group": "Build",
+    "Progress": 0,
+    "Resource": "Alice"
+  },
+  {
+    "Task": "QA",
+    "Start": "2025-10-24",
+    "End": "2025-10-29",
+    "Dependencies": ["Integration"],
+    "Group": "Launch",
+    "Progress": 0,
+    "Resource": "Bob"
+  },
+  {
+    "Task": "Launch",
+    "Start": "2025-10-30",
+    "End": "2025-10-30",
+    "Dependencies": ["QA"],
+    "Group": "Launch",
+    "Progress": 0,
+    "Resource": "Team"
   }
 ]

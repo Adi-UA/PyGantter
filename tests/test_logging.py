@@ -1,4 +1,3 @@
-import pytest
 
 from pygantter.logging import get_logger, setup_logger
 
